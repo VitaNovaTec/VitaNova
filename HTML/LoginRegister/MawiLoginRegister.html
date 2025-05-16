@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawi - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Fira Sans', sans-serif;
+        }
+        
+        body {
+            background-color: #353535;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .login-container {
+            background-color: #505050;
+            width: 536px;
+            height: 480px;
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 33px 20px;
+            position: relative;
+        }
+        
+        .app-title {
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 117px;
+            text-align: center;
+            color: #f0f0f0;
+            margin-bottom: 30px;
+        }
+        
+        .app-description {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: #f0f0f0;
+            margin-bottom: 40px;
+            max-width: 424px;
+        }
+        
+        .action-button {
+            background-color: #22782c;
+            border-radius: 22px;
+            width: 236px;
+            height: 81px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 22px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .action-button:hover {
+            background-color: #2a8c34;
+        }
+        
+        .action-button:active {
+            background-color: #1c6624;
+        }
+        
+        .button-text {
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #f0f0f0;
+        }
+        
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+                height: auto;
+                padding: 30px 15px;
+            }
+            
+            .app-title {
+                font-size: 72px;
+                line-height: 88px;
+            }
+            
+            .app-description {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            
+            .action-button {
+                width: 200px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="app-title">Mawi</h1>
+        <p class="app-description">Inicia sesión o crea tu cuenta para empezar a usar Mawi y todas sus funciones.</p>
+        
+        <button id="login-button" class="action-button">
+            <span class="button-text">Iniciar sesión</span>
+        </button>
+        
+        <button id="signup-button" class="action-button">
+            <span class="button-text">Crear cuenta</span>
+        </button>
+    </div>
+
+    <script>
+        // Login functionality
+        document.getElementById('login-button').addEventListener('click', function() {
+            // In a real application, this would redirect to a login form
+            alert('Redirigiendo a la página de inicio de sesión...');
+            // window.location.href = '/login';
+        });
+        
+        // Signup functionality
+        document.getElementById('signup-button').addEventListener('click', function() {
+            // In a real application, this would redirect to a signup form
+            alert('Redirigiendo a la página de creación de cuenta...');
+            // window.location.href = '/signup';
+        });
+    </script>
+</body>
+</html>
